@@ -1,0 +1,150 @@
+/* Importación de la fuente "Bebas Neue" desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Estilos para el fondo del cuerpo */
+body {
+    background-color: #18191F;
+}
+
+/* Estilos para la sección principal */
+main {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el banner principal */
+.bannerPrincipal {
+    width: 100%;
+    position: relative;
+    height: 630px;
+    
+}
+
+/* Estilos para el título principal */
+.tituloPrincipal {
+    color: #E5E7E9;
+    position: absolute;
+    font-size: 170px;
+    font-family: 'Bebas Neue', cursive;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 100px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+/* Estilos para la imagen de fondo del banner principal */
+.bannerPrincipal img {
+    width: 100%;
+    height: 630PX;
+    opacity: 0.3;
+}
+
+/* Estilos para la etiqueta de "Vendido" en la parte superior de las tarjetas de productos */
+.vendido-top {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+/* Estilos para las tarjetas de productos en dispositivos móviles */
+.Vendido {
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 150px;
+}
+
+/* Estilos para las tarjetas de productos en dispositivos móviles */
+.card1 {
+    position: relative;
+    border-radius: 15px;
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #0bb3c2; /*antes: rgb(190, 55, 55);*/
+    text-align: center;
+}
+
+/* Estilos para la descripción de los productos */
+.bio {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    color: white;
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+    margin: 0;
+    line-height: 30px;
+}
+
+/* Estilos para las imágenes de las tarjetas de productos */
+.img-card {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+/* Estilos al pasar el cursor sobre las imágenes de las tarjetas de productos */
+.img-card:hover {
+    transform: scale(1.1);
+    transition: 0.5s all ease-in-out;
+}
+
+/* Estilos al pasar el cursor sobre las imágenes de las tarjetas de productos */
+.img-card:hover~.bio {
+    opacity: 1.0;
+    background: rgba(16, 13, 13, 0.618);
+    transition: 0.5s all ease-in-out;
+}
+
+.header{
+    width: 100% !important;
+    height: 80px !important;
+}
+
+@media (max-width:760px) {
+
+    /* Estilos para el banner principal */
+    .bannerPrincipal {
+        height: 330px;
+    }
+
+    /* Estilos para el título principal */
+    .tituloPrincipal {
+        font-size: 80px;
+        line-height: 70px;
+    }
+
+    .bannerPrincipal img {
+        width: 100%;
+        height: 330px;
+    }
+
+    /* Estilos para la etiqueta de "Vendido" en la parte superior de las tarjetas de productos */
+    .vendido-top {
+        font-size: 20px;
+    }
+
+    .Vendido {
+        gap: 50px;
+    }
+
+}

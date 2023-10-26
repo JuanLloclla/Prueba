@@ -82,6 +82,7 @@
     box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.2);
     display: none;
     border-radius: 5px;
+    z-index: 3;
 }
 
 /*Estilo para los cuadros de Ingresar y Registrar*/
